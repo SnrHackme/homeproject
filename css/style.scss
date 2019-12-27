@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'GothaProReg';
+    src: url("../fonts/GothaProReg.otf") format("opentype");
+}
+@font-face {
+    font-family: 'GothaProMed';
+    src: url("../fonts/GothaProMed.otf") format("opentype");
+}
+@font-face {
+    font-family: 'GothaProBol';
+    src: url("../fonts/GothaProBol.otf") format("opentype");
+}
+
+body {
+    font-size: 14px;
+    font-family: 'GothaProReg';
+    background-color: #fff;
+    a {
+        text-decoration: none;
+    }
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 105px;
+    & > div {
+        display: flex;
+        align-items: center;
+    }
+    .header-logo {
+        width: 170px;
+        margin-right: 30px;
+        &__img {
+            display: block;
+            background-image: url(../img/logo.png);
+            width: 166px;
+            height: 45px;
+        }
+    }
+    .header-navigation {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        &__item {
+            margin-right: 45px;
+        }
+        &__link {
+            text-transform: uppercase;
+            font-family: 'GothaProMed';
+            font-size: 12px;
+            color: #000;
+            border-bottom: 1px solid #bfbfbf;
+        }
+    }
+    .header-btn {
+        margin-left: 30px;
+        height: 45px;
+        width: 170px;
+        background-color: #fe9c10;
+        border: 0;
+        color: #fff;
+        font-family: 'GothaProMed';
+        font-size: 12px;
+    }
+    .header-phone {
+        font-size: 18px;
+        font-family: 'GothaProBol';
+        color: #000;
+    }
+}
+.home-box {
+    background-image: url(../img/main-bg.jpg);
+    height: 990px;
+    background-position: center;
+    background-repeat: no-repeat;
+    .home-info {
+        margin-left: 100px;
+        font-family: 'GothaProMed';
+        color: #fff;
+        &__title {
+            font-size: 40px;
+            text-transform: uppercase;
+            max-width: 485px;
+            line-height: 59px;
+            padding-top: 80px;
+            margin-top: 0;
+            margin-bottom: 60px;
+            & > span {
+                font-size: 18px;
+            }
+        }
+        &__description {
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            margin-top: 0;
+            margin-bottom: 40px;
+            &:last-child {
+                margin-bottom: 80px;
+            }
+        }
+        &__icon {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin-right: 30px;
+        }
+        &__icon.icon1 {
+            background-image: url(../img/main-desk1.png);
+        }
+        &__icon.icon2 {
+            background-image: url(../img/main-desk2.png);
+        }
+    }
+    .home-form {
+        background-color: #fff;
+        height: 420px;
+        position: relative;
+        .form-content {
+            margin-left: 100px;
+            input {
+                width: 270px;
+                height: 65px;
+                padding: 0;
+                margin: 0;
+                border: 0;
+                background-color: #f7f7f7;
+                box-sizing: border-box;
+                padding-left: 30px;
+                &::placeholder {
+                    color: #7b7b7b;
+                    font-size: 12px;
+                }
+            }
+            .flex-group {
+                display: flex;
+                margin-top: 30px;
+                p {
+                    color: #000;
+                    line-height: 18px;
+                    font-family: 'GothaProMed';
+                    margin: 0;
+                    & > span {
+                        display: block;
+                        margin-top: 16px;
+                        &:before {
+                            content: '* ';
+                        }
+                    }
+                }
+            }
+            .home-form__name {
+                margin-right: 30px;
+            }
+        }
+        &__img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &__title {
+            font-size: 24px;
+            font-family: 'GothaProBol';
+            text-transform: uppercase;
+            margin-top: 0;
+            padding-top: 75px;
+            & > span {
+                display: block;
+                text-transform: initial;
+                font-size: 20px;
+                margin-top: 35px;
+                margin-bottom: 75px;
+            }
+        }
+        &__btn {
+            width: 270px;
+            height: 65px;
+            background-color: #fe9c10;
+            border: 0;
+            color: #fff;
+            font-size: 12px;
+            margin-right: 30px;
+            text-transform: uppercase;
+            font-family: 'GothaProBol';
+        }
+    }
+}

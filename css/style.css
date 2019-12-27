@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'GothaProReg';
+  src: url("../fonts/GothaProReg.otf") format("opentype"); }
+@font-face {
+  font-family: 'GothaProMed';
+  src: url("../fonts/GothaProMed.otf") format("opentype"); }
+@font-face {
+  font-family: 'GothaProBol';
+  src: url("../fonts/GothaProBol.otf") format("opentype"); }
+body {
+  font-size: 14px;
+  font-family: 'GothaProReg';
+  background-color: #fff; }
+  body a {
+    text-decoration: none; }
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 105px; }
+  .header-box > div {
+    display: flex;
+    align-items: center; }
+  .header-box .header-logo {
+    width: 170px;
+    margin-right: 30px; }
+    .header-box .header-logo__img {
+      display: block;
+      background-image: url(../img/logo.png);
+      width: 166px;
+      height: 45px; }
+  .header-box .header-navigation {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0; }
+    .header-box .header-navigation__item {
+      margin-right: 45px; }
+    .header-box .header-navigation__link {
+      text-transform: uppercase;
+      font-family: 'GothaProMed';
+      font-size: 12px;
+      color: #000;
+      border-bottom: 1px solid #bfbfbf; }
+  .header-box .header-btn {
+    margin-left: 30px;
+    height: 45px;
+    width: 170px;
+    background-color: #fe9c10;
+    border: 0;
+    color: #fff;
+    font-family: 'GothaProMed';
+    font-size: 12px; }
+  .header-box .header-phone {
+    font-size: 18px;
+    font-family: 'GothaProBol';
+    color: #000; }
+
+.home-box {
+  background-image: url(../img/main-bg.jpg);
+  height: 990px;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .home-box .home-info {
+    margin-left: 100px;
+    font-family: 'GothaProMed';
+    color: #fff; }
+    .home-box .home-info__title {
+      font-size: 40px;
+      text-transform: uppercase;
+      max-width: 485px;
+      line-height: 59px;
+      padding-top: 80px;
+      margin-top: 0;
+      margin-bottom: 60px; }
+      .home-box .home-info__title > span {
+        font-size: 18px; }
+    .home-box .home-info__description {
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+      margin-bottom: 40px; }
+      .home-box .home-info__description:last-child {
+        margin-bottom: 80px; }
+    .home-box .home-info__icon {
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin-right: 30px; }
+    .home-box .home-info__icon.icon1 {
+      background-image: url(../img/main-desk1.png); }
+    .home-box .home-info__icon.icon2 {
+      background-image: url(../img/main-desk2.png); }
+  .home-box .home-form {
+    background-color: #fff;
+    height: 420px;
+    position: relative; }
+    .home-box .home-form .form-content {
+      margin-left: 100px; }
+      .home-box .home-form .form-content input {
+        width: 270px;
+        height: 65px;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background-color: #f7f7f7;
+        box-sizing: border-box;
+        padding-left: 30px; }
+        .home-box .home-form .form-content input::placeholder {
+          color: #7b7b7b;
+          font-size: 12px; }
+      .home-box .home-form .form-content .flex-group {
+        display: flex;
+        margin-top: 30px; }
+        .home-box .home-form .form-content .flex-group p {
+          color: #000;
+          line-height: 18px;
+          font-family: 'GothaProMed';
+          margin: 0; }
+          .home-box .home-form .form-content .flex-group p > span {
+            display: block;
+            margin-top: 16px; }
+            .home-box .home-form .form-content .flex-group p > span:before {
+              content: '* '; }
+      .home-box .home-form .form-content .home-form__name {
+        margin-right: 30px; }
+    .home-box .home-form__img {
+      position: absolute;
+      top: 0;
+      right: 0; }
+    .home-box .home-form__title {
+      font-size: 24px;
+      font-family: 'GothaProBol';
+      text-transform: uppercase;
+      margin-top: 0;
+      padding-top: 75px; }
+      .home-box .home-form__title > span {
+        display: block;
+        text-transform: initial;
+        font-size: 20px;
+        margin-top: 35px;
+        margin-bottom: 75px; }
+    .home-box .home-form__btn {
+      width: 270px;
+      height: 65px;
+      background-color: #fe9c10;
+      border: 0;
+      color: #fff;
+      font-size: 12px;
+      margin-right: 30px;
+      text-transform: uppercase;
+      font-family: 'GothaProBol'; }
+
+/*# sourceMappingURL=style.css.map */
