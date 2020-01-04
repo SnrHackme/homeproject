@@ -27,4 +27,19 @@ $(document).ready(function(){
               },
         ]
     });
+    $("#phone1").mask("+38(999) 999-9999");
+    $("#phone2").mask("+38(999) 999-9999");
+});
+
+let filter = document.querySelectorAll('.popular-filter-list__item');
+filter.forEach(element => {
+    element.addEventListener('click' , (e) => {
+        let mass = document.querySelectorAll('.popular-grid-item__name');
+        mass.forEach( elem => {
+            elem.parentElement.style.display = 'block';
+            if(!elem.classList.contains(e.target.dataset.filter)) {
+                elem.parentElement.style.display = 'none';
+            }
+        });
+    });
 });
