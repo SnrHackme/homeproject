@@ -29,6 +29,7 @@ $(document).ready(function(){
     });
     $("#phone1").mask("+38(999) 999-9999");
     $("#phone2").mask("+38(999) 999-9999");
+    $("#phone3").mask("+38(999) 999-9999");
 });
 
 let filter = document.querySelectorAll('.popular-filter-list__item');
@@ -42,4 +43,25 @@ filter.forEach(element => {
             }
         });
     });
+});
+function overlay(opacity,classToAppend = 'body') {
+    let classAdd =  document.querySelector(classToAppend);
+    if (opacity == 0) {
+        classAdd.removeChild(document.querySelector('.overlay'));
+        return;
+    }
+    let overlay = document.createElement('div');
+    overlay.className='overlay';
+    classAdd.appendChild(overlay);
+    overlay.style.opacity = opacity;
+}
+document.querySelectorAll('.popular-grid-item__btn').forEach( elem => {
+    elem.addEventListener('click', () => {
+        overlay(0.7,'body');
+        document.querySelector('.modal').style.display = 'block';
+    })
+});
+document.querySelector('.form__btn').addEventListener('click', () => {
+        overlay(0,'body')
+        document.querySelector('.modal').style.display = 'none';
 });

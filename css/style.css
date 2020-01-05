@@ -822,4 +822,107 @@ body {
 .menu__item:hover {
   background-color: #CFD8DC; }
 
+@-webkit-keyframes drop {
+  0% {
+    top: -200px; }
+  100% {
+    top: 20px; } }
+
+@keyframes drop {
+  0% {
+    top: -200px; }
+  100% {
+    top: 20px; } }
+@-webkit-keyframes dropUp {
+  0% {
+    top: 20px; }
+  100% {
+    top: -200px; } }
+@keyframes dropUp {
+  0% {
+    top: 20px; }
+  100% {
+    top: -200px; } }
+.overlay {
+  background: black;
+  display: block;
+  position: fixed;
+  width: 1150%;
+  height: 1000%;
+  left: -1800px;
+  top: -1500px;
+  z-index: 1000; }
+
+.modal {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  margin-left: -25%;
+  width: 50%;
+  z-index: 1001;
+  background: #fff;
+  border: solid 10px #feb44d;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  -webkit-animation: drop 1s ease-in-out;
+          animation: drop 1s ease-in-out; }
+
+.form input {
+  width: 270px;
+  height: 65px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: #f7f7f7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 30px;
+  margin-top: 20px;
+  z-index: 2; }
+  .form input::-webkit-input-placeholder {
+    color: #7b7b7b;
+    font-size: 12px;
+    letter-spacing: 0.5px; }
+  .form input:-ms-input-placeholder {
+    color: #7b7b7b;
+    font-size: 12px;
+    letter-spacing: 0.5px; }
+  .form input::-ms-input-placeholder {
+    color: #7b7b7b;
+    font-size: 12px;
+    letter-spacing: 0.5px; }
+  .form input::placeholder {
+    color: #7b7b7b;
+    font-size: 12px;
+    letter-spacing: 0.5px; }
+.form__btn {
+  width: 270px;
+  height: 65px;
+  background-color: #fe9c10;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'GothaProBol';
+  cursor: pointer;
+  outline: none; }
+.form .flex-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px; }
+.form p {
+  color: #000; }
+
 /*# sourceMappingURL=style.css.map */
