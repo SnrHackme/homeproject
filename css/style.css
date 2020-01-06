@@ -868,6 +868,8 @@ body {
   -webkit-animation: drop 1s ease-in-out;
           animation: drop 1s ease-in-out; }
 
+.form .form-content {
+  position: relative; }
 .form input {
   width: 270px;
   height: 65px;
@@ -924,5 +926,17 @@ body {
   margin-top: 20px; }
 .form p {
   color: #000; }
+.form .close {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+  text-decoration: none;
+  top: 10px;
+  right: 10px;
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

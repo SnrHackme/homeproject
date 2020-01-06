@@ -59,6 +59,14 @@ document.querySelectorAll('.popular-grid-item__btn').forEach( elem => {
     elem.addEventListener('click', () => {
         overlay(0.7,'body');
         document.querySelector('.modal').style.display = 'block';
+        document.querySelector('.overlay').addEventListener('click', () => {
+            overlay(0,'body')
+            document.querySelector('.modal').style.display = 'none';
+        });
+        document.querySelector('.close').addEventListener('click', () => {
+            overlay(0,'body')
+            document.querySelector('.modal').style.display = 'none';
+        });
     })
 });
 document.querySelector('.form__btn').addEventListener('click', () => {

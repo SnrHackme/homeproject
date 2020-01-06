@@ -879,6 +879,9 @@ body {
     animation: drop 1s ease-in-out;
 }
 .form {
+    .form-content {
+        position: relative;
+    }
     input {
         width: 270px;
         height: 65px;
@@ -918,5 +921,19 @@ body {
     p {
         color:#000;
     }
+    .close {
+        position: absolute;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        opacity: .5;
+        text-decoration: none;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
 }
+
 
